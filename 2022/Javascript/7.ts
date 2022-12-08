@@ -16,7 +16,7 @@ commands.forEach((command) => {
   } else if (commandType?.startsWith("ls")) {
     return
   } else {
-    const [size, name] = command.split(" ");
+    const [size] = command.split(" ");
     if (size === "dir") return;
     const tempPath: string[] = []
     currentPath.forEach(p => {
